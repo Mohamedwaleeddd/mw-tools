@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jq.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#show").click(function() {
+      $("#sb").fadeIn(10);
+    });
+    $("#h").click(function() {
+      $("#sb").fadeOut(10);
+    });
+  });
+</script>
+  <title>Road Maps | Mw Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+   <img src="logo.png" alt="">
+    <ul id="show">
+ <div style="border-bottom:4px blueviolet solid;width:27px;border-radius:1px"></div>
+    <div style="border-bottom:4px blueviolet solid;width:26px;margin-top: 5px;border-radius:1px"></div>
+    <div style="border-bottom:4px blueviolet solid;width:27px;margin-top: 5px;border-radius:1px"></div>           
+    </ul>
+  </nav>
+<div align="center" class="sb" id="sb">
+  <br><br><br><br>
+  <ul>
+  <h1 id="h" style="cursor:pointer;color:blueviolet;left: 12px;position:absolute;font-family:sans-seirf;margin-top: 30px">x</h1>
+  <br> <img src="logo2.png"><br>
+  <a class="hover-underline-animation" href="index.html">الرئيسية</a><br>
+  <br>
+  <a class="hover-underline-animation" href="rm.html">المسارات التعليمية</a><br><br>
+<a class="hover-underline-animation" href="c.html"> قنوات البرمجة</a><br><br>
+  <a class="hover-underline-animation" href="books.html">ملخصات</a><br><br>
+  <a class="hover-underline-animation" href"text.html"> مقالات</a><br><br>
+  <a class="hover-underline-animation" href="temp.html">Templates</a><br><br>
+  </ul>
+  <br>
+  <br>
+</div><br><br>
+<center>
+<h1><span>R</span>oad Maps</h1>
+<br>
+<div class="btns">
+<a href="fe.html"><button>Front-End</button></a><br>
+<a href="be.html"><button>Back-end</button></a><br>
+<a href="fs.html"><button>Full-stack</button></a><br>
+</div>
+</center>
+</body>
+</html>

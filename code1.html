@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="jq.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#show").click(function() {
+        $("#sb").fadeIn(10);
+      });
+      $("#h").click(function() {
+        $("#sb").fadeOut(10);
+      });
+    });
+  </script>
+  
+</head>
+<body>
+<nav>
+   <img src="logo.png" alt="">
+    <ul id="show">
+ <div style="border-bottom:4px blueviolet solid;width:27px;border-radius:1px"></div>
+    <div style="border-bottom:4px blueviolet solid;width:26px;margin-top: 5px;border-radius:1px"></div>
+    <div style="border-bottom:4px blueviolet solid;width:27px;margin-top: 5px;border-radius:1px"></div>           
+    </ul>
+  </nav>
+<div align="center" class="sb" id="sb">
+  <ul><br><br><br><br>
+<h1 id="h" style="cursor:pointer;color:blueviolet;left: 12px;position:absolute;font-family:sans-seirf;margin-top: 30px">x</h1>
+<br>
+<ul>
+  <img src="logo2.png"><br>
+  <a class="hover-underline-animation" href="index.html">الرئيسية</a><br>
+  <br>
+  <a class="hover-underline-animation" href="rm.html">المسارات التعليمية</a><br><br>
+  <a class="hover-underline-animation" href="c.html">قنوات البرمجة</a><br><br>
+  <a class="hover-underline-animation" href="books.html">ملخصات</a><br><br>
+  <a class="hover-underline-animation" href"text.html"> مقالات</a><br><br>
+  <a class="hover-underline-animation" href="temp.html">Templates</a><br><br>
+  </ul>
+  <br>
+  <br>
+</div><br><br>
+  <center>
+    <h1 id="h1-h" style="border:1px #7700ff solid;width:95%">صفحة تسجيل الدخول</h1>
+  <img src="Screenshot_20230809-235141_Spck Editor.jpg" style="border:1px #7700ff solid;border-bottom:none;border-top: none;" width="95%">
+  <div class="code" id="code">
+  </div>
+  </center><br>
+  <script>
+var code =  document.getElementById("code");
+    code.innerText = `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <title>Login Form</title>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+       *{
+         font-family: 'Changa', sans-serif;
+          color: #fff;
+          transition: 1s;
+          text-decoration: none;
+        }
+        body{
+         background-image: url(Bg.jpg);
+         background-size: cover;
+         height: 100vh;
+         place-items: center;
+         display: grid;
+        }
+        span{
+          color: dodgerblue;
+        }
+        input{
+          padding: 10px;
+          width: 200px;
+          border: none;
+          margin-top: 10px;
+          background: none;
+          height: 20px;
+          border-bottom: 2px dodgerblue solid;
+        }
+        .login{
+          position: relative;
+          border-radius: 5px;
+          padding: 30px;
+          height: 300px;
+          backdrop-filter: blur(30px);
+          border: 1px dodgerblue solid;
+        }
+        a{
+          color: dodgerblue;
+          text-decoration: underline;
+         font-weight: 200;
+         left: 35px;
+         margin-top: 10px;
+         font-size: 12px;
+         position: absolute;
+        }
+        button:hover{
+          background: dodgerblue;
+          color: #fff;
+        }
+        button{
+          width: 120px;
+          height: 30px;
+          background: none;
+          border-radius: 2px;
+          border: 1px dodgerblue solid;
+          border-radius: 5px;
+          color:dodgerblue;
+          margin-top: 10px;
+        }
+        ::placeholder{
+          color:dodgerblue;
+          opacity: 0.80;
+        }
+      </style>
+      
+    </head>
+    
+    <body>
+      <div align="center" class="login">
+          <h1 align="center"><span>L</span>ogin</h1>
+          <center>
+         <input type="email" placeholder=" Enter Your Email"><br>
+        <input type="password" placeholder=" Enter Your Password">
+          </center>
+        <a href="">Create New Acount</a><br>
+        
+        <button>Login</button>
+      </div>
+      <script src="main.js"></scrip
+    </body>
+    </html>`;
+  </script>
+</body>
+</html>

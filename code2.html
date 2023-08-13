@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="jq.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#show").click(function() {
+        $("#sb").fadeIn(10);
+      });
+      $("#h").click(function() {
+        $("#sb").fadeOut(10);
+      });
+    });
+  </script>
+  
+</head>
+<body>
+<nav>
+   <img src="logo.png" alt="">
+    <ul id="show">
+ <div style="border-bottom:4px blueviolet solid;width:27px;border-radius:1px"></div>
+    <div style="border-bottom:4px blueviolet solid;width:26px;margin-top: 5px;border-radius:1px"></div>
+    <div style="border-bottom:4px blueviolet solid;width:27px;margin-top: 5px;border-radius:1px"></div>           
+    </ul>
+  </nav>
+<div align="center" class="sb" id="sb">
+  <ul><br><br><br><br>
+<h1 id="h" style="cursor:pointer;color:blueviolet;left: 12px;position:absolute;font-family:sans-seirf;margin-top: 30px">x</h1>
+<br>
+<ul>
+  <img src="logo2.png"><br>
+  <a class="hover-underline-animation" href="index.html">الرئيسية</a><br>
+  <br>
+  <a class="hover-underline-animation" href="rm.html">المسارات التعليمية</a><br><br>
+  <a class="hover-underline-animation" href="c.html">قنوات البرمجة</a><br><br>
+  <a class="hover-underline-animation" href="books.html">ملخصات</a><br><br>
+  <a class="hover-underline-animation" href"text.html"> مقالات</a><br><br>
+  <a class="hover-underline-animation" href="temp.html">Templates</a><br><br>
+  </ul>
+  <br>
+  <br>
+</div><br>
+  <center>
+    <h1 id="h1-h" style="border:1px #7700ff solid;width:95%">موقع تعليمي</h1>
+  <img src="FB_IMG_1691810377949.jpg" style="border:1px #7700ff solid;border-bottom:none;border-top: none;" width="95%">
+  <div class="code" id="code">
+  </div>
+  </center><br>
+  <script>
+var code =  document.getElementById("code");
+    code.innerText = `
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Education Website</title>
+  <style>
+    *{
+      transition: 1s;
+      padding: 0;
+      margin:0;
+      text-decoration: none;
+      align-items: center;
+      color: black;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 470;
+      cursor: none;
+    }
+    .landing{
+      display: flex;
+      justify-content: space-around;
+      background: whitesmoke;
+      top: 60px;
+      height: 600px;
+      width: 100%;
+      border-bottom: 1px lightgrey solid;
+    }
+    .landing img{
+      width: 40%;
+    }
+    header{
+      display: flex;
+      justify-content: space-around;
+      background: whitesmoke;
+      height: 60px;
+      top:0;
+      position: fixed;
+      width:100%;
+      border-bottom: 1px grey solid;
+      z-index: 99999999;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+    .active{
+      border-bottom: 1.50px solid black;
+      font-weight: 500;
+      border-top: 1.50px black solid;
+    }
+    .active:hover{
+      text-decoration: none;
+      color: black;
+    }
+    @media(max-width: 900px){
+      a{
+        font-size: 12px;
+      }
+    .landing  h1{
+        font-size: 13px;
+        margin-left: 30px
+      }
+      .landing p{
+        font-size: 9px;
+        top: 290px;
+      }
+      header h2{
+        font-size: 18px;
+      }
+      .landing img{
+        width: 220px;
+      }
+      button{
+        top: 250px;
+      }
+      .about p{
+        font-size: 10px;
+      }
+    }
+    header h2{
+      font-weight: 400;
+    }
+    span{
+      color: #fff;
+      background: black;
+    }
+    .ill{
+      width: 35%;
+    }
+    .landing p{
+      position: absolute;
+      margin-top: 60px;
+      left: 10%;
+    }
+    .landing button{
+      position: absolute;
+      left: 15%;
+      margin-top: 120px;
+      border: 2px black solid;
+      background: none;
+      color: black;
+      font-size: 10px;
+      width: 100px;
+      height: 25px;
+      border-radius: 5px;
+    }
+    button:hover{
+      background: black;
+      color: ghostwhite;
+    }
+  .about{
+    display: flex;
+    align-items: center;
+  }
+  .about img{
+    width: 50%;
+    margin-left: 10px;
+  }
+  .about p{
+    margin-left: 10px;
+    font-weight: 400;
+  }
+  .contact{
+    justify-content: space-around;
+    display: flex;
+  }
+  input{
+    width: 220px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px dodgerblue solid;
+    height: 30px;
+    border-radius: 0px;
+    color: dodgerblue;
+    padding: 2px;
+  }
+  textarea{
+    width: 200px;
+    height: 100px;
+    border: 2px dodgerblue solid;
+    border-radius: 2px;
+    padding: 10px;
+  }
+  ::placeholder{
+    color: dodgerblue;
+  }
+  .contact button{
+    background: none;
+    border: 2px dodgerblue solid;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    color: dodgerblue;
+  }
+  .conatct button:hover{
+    color: white;
+    background: dodgerblue;
+  }
+  </style>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+      rel="stylesheet"/>
+</head>
+<body>
+  <br>
+  <br>
+  <header>
+    <h2><span>L</span>OGO</h2>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Why</a>
+    <a href="#">Contact us</a>
+    <a href="#" class="active">Login</a>
+  </header>
+  <div class="landing">
+    <h1>Welcome to our School!!</h1>
+    <p>Lorem ipsum dolor sit amet</p>
+    <button>Learn More</button>
+    <br>
+    <img src="education-7092162-5753353.png" class="ill">
+  </div>
+  <hr>
+  <br>
+  <br>
+  <center>
+    <h1>About us</h1>
+  </center>
+  <div class="about">
+   <img src="6364b6fd26e2983c58b93d94_3d-cv-education.png" alt="">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam laborum repellendus cum, non neque quibusdam voluptatibus. Aperiam amet veritatis iure doloremque obcaecati cupiditate ab id voluptates. Vitae voluptates nobis ullam.</p>
+  </div>
+  <br>
+  <center>
+    <h1>Why choose us?</h1>
+  </center>
+  <div class="about">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione temporibus rem laboriosam nesciunt fugiat in assumenda nihil repellat placeat voluptatem incidunt explicabo hic quis itaque aut repudiandae.</p>
+      <img src="3d-illustration-of-creative-learning-school-education-college-icon-png.png" alt="">
+  </div>
+  <center>
+    <h1>Contact us</h1>
+  </center>
+  <div class="contact">
+   <img src="signin-2161424-1815066 (1).png" width="40%"> 
+   <form>
+     <input type="text" placeholder=" Enter your full name">
+     <br>
+     <input type="Email" placeholder=" Enter Your Email">
+     <br>
+     <br>
+     <textarea placeholder=" Enter your subject"></textarea>
+     <br>
+     <center>
+     <button>send</button>
+     </center>
+   </form>
+  </div><br>
+</body>
+</html>`;
+  </script>
+</body>
+</html>

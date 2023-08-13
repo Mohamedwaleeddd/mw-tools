@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MW-TOOLS</title>
+  
+  <script src="jq.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("#show").click(function() {
+    $("#sb").fadeIn(10);
+     });
+     $("#h").click(function() {
+     $("#sb").fadeOut(10);
+      });
+  });
+      </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <div align="center" class="landing">
+  
+  
+  <nav>
+    <img src="logo.png" alt="">
+     <ul id="show">
+  <div style="border-bottom:4px blueviolet solid;width:27px;border-radius:1px"></div>
+     <div style="border-bottom:4px blueviolet solid;width:26px;margin-top: 5px;border-radius:1px"></div>
+     <div style="border-bottom:4px blueviolet solid;width:27px;margin-top: 5px;border-radius:1px"></div>           
+     </ul>
+   </nav>
+ <div align="center" class="sb" id="sb">
+   <br><br><br><br>
+   <h1 id="h" style="cursor:pointer;color:blueviolet;left: 12px;position:absolute;font-family:sans-seirf;margin-top:30px">x</h1>
+   <br>
+   <ul>
+     <img src="logo2.png"><br>
+     <a class="hover-underline-animation" href="index.html">الرئيسية</a><br>
+     <br>
+     <a class="hover-underline-animation" href="rm.html">المسارات التعليمية</a><br><br>
+   <a class="hover-underline-animation" href="c.html"> قنوات البرمجة</a><br><br>
+     <a class="hover-underline-animation" href="books.html">ملخصات</a><br><br>
+   <a class="hover-underline-animation" href"text.html"> مقالات</a><br><br>
+  <a class="hover-underline-animation" href="temp.html">Templates</a><br><br>
+   </ul>
+   <br>
+   <br>
+ </div>
+   <ul>
+    <br><br><br><br><br><br>
+     <center>
+      <div class="l-content">
+       <h2><span>!mw-tools</span> اهلاً بك في</h2>
+       <p>إذا كنت تتعلم البرمجة او تعلمتها فا هذا الموقع لك</p><br><br>
+       <div style="display:flex;align-items:center;position:relative;">
+       <input onkeyup="search()" type="search" placeholder=" ابحث في الموقع" id="search"><label>
+         <svg xmlns="http://www.w3.org/2000/svg" height="1px" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></label>
+      </div>
+     </center>
+   </ul>
+ </div>
+ <center>
+   <div class="h1">
+ <h1 id="h1" align="center">>></h1>
+ </div>
+ </center>
+ <br>
+ <div id="cards" class="cards">
+ <div align="center" class="card"><br>
+   <img src="roadmap-16-723637.png" alt="">
+   <h3>Road Maps</h3>
+   <a href="rm.html"><button>تعرف اكثر</button><br></a>
+ </div>
+  <div align="center" class="card"><br>
+    <img src="video.png" alt="">
+    <h3 style="font-size: 15px">افضل القنوات للبرمجة</h3>
+    <a href="c.html"><button>تعرف اكثر</button></a><br>
+  </div>
+ <div align="center" class="card"><br>
+   <img src="645c69f69c.png" style="width:105px">
+   <h3>ملخصات</h3>
+  <a href="books.html"><button>تعرف اكثر</button></a>
+  <br>
+ </div>
+ <div align="center" class="card"><br>
+   <img src="7586932.png" style="">
+   <h3>Templates</h3>
+   <a href="temp.html"><button>تعرف اكثر</button></a><br>
+ </div>
+ <div align="center" class="card"><br>
+   <img src="1200px-OOjs_UI_icon_articles-rtl-progressive.svg.png" alt="">
+   <h3>المقالات</h3>
+   <a href="text.html"><button>تعرف اكثر</button></a>
+ </div>
+ </div>
+ <br>
+ <footer align="center">
+  <br>
+  <h4>حقوق النشر &copy; <a href="https://mohamedwaleeddd.github.io/Memo_Dev/"><span style="text-decoration:underline;">محمد وليد</span></h4>
+ </footer>
+ <br>
+  <script>
+    
+  function search(){
+  let cards = document.querySelector('.cards');
+  let search = document.querySelector('#search').value.toUpperCase();
+  let card = document.querySelectorAll('.card');
+  let cardTitle = document.getElementsByTagName('h3');
+  for(let i = 0;i < cardTitle.length; i++){
+    if(cardTitle[i].innerHTML.toUpperCase().indexOf(search) >= 0){
+      card[i].style.display = "";
+      
+    }else{
+      card[i].style.display = "none";
+    }
+    let landing = document.querySelector('.landing');
+  }
+}
+  </script>
+</body>
+</html>
